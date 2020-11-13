@@ -29,7 +29,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><button type="button" class="btn btn-primary">Add</button>    <button type="button" class="btn btn-primary">Remove</button></td>
+    <td><button type="button" class="btn btn-info">Add</button>    <button type="button" class="btn btn-info">Remove</button></td>
   </tr>
 <?php
 }
