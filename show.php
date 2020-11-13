@@ -29,13 +29,13 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><button type="button" class="btn btn-info">Add</button>    <button type="button" class="btn btn-info">Remove</button></td>
+    <td><button type="button" class="btn btn-info">Edit</button>    <button type="button" class="btn btn-danger">Remove</button></td>
   </tr>
 <?php
 }
 ?>
-    <td><button type="button" class="btn btn-info">Add</button></td>
 </table>
+<td><button href="form.html" type="button" class="btn btn-success">Add</button></td>
 <?php
 mysqli_close($conn);
 ?>
