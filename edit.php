@@ -6,13 +6,13 @@ mysqli_real_connect($conn, 'toenweek13.mysql.database.azure.com', 'toenteen@toen
 $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID='$id'");
 $row = mysqli_fetch_array($res)
 ?>
-<span class="badge badge-success"><form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
+<div class="alert alert-success" role="alert"><form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
     Name:<br>
-    <input type="text" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" </span><br>
+    <input type="text" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" <br>
     Comment:<br>
     <input type="text" name = "Comment" id="idComment" value="<?php echo "$row[Comment]"; ?>" <br>
     <br><br>
     Link:<br>
     <input type="text" name = "Link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
-    <input type="submit" id="commentBtn"class="btn btn-success">
+    <input type="submit" id="commentBtn"class="btn btn-success"></div>
   </form>
