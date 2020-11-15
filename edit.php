@@ -9,6 +9,7 @@ $row = mysqli_fetch_array($res)
 <div class="alert alert-success" role="alert"><form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
     Name:<br>
     <input type="text" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" <br>
+    <br><br>
     Comment:<br>
     <input type="text" name = "Comment" id="idComment" value="<?php echo "$row[Comment]"; ?>" <br>
     <br><br>
