@@ -9,6 +9,7 @@ $row = mysqli_fetch_array($res)
 <span class="badge badge-secondary"><form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
     Name:<br>
     <input type="text" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" </span><br>
+    <br><br>
     Comment:<br>
     <input type="text" name = "Comment" id="idComment" value="<?php echo "$row[Comment]"; ?>" <br>
     Link:<br>
