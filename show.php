@@ -30,7 +30,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
         <td><?php echo $Result['Name'];?></div></td>
         <td><?php echo $Result['Comment'];?></td>
         <td><?php echo $Result['Link'];?></td>
-        <td><a href="edit.php?ID=<?php echo $Result['ID']?><button type="button" class="btn btn-info">Edit</button></a>    <a tabindex="0" data-toggle="popover" data-trigger="focus" popover" data-content="xxx" href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-danger"onclick="return confirm('Are you sure you want to delete this item?')">Remove</a></td>
+        <td><a href="edit.php?ID=<?php echo $Result['ID']?><button type="button" class="btn btn-info">Edit</button></a>    <a href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-danger" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?" onclick="return confirm('Are you sure you want to delete this item?')">Remove</a></td>
       </tr>
     <?php
     }
