@@ -2,8 +2,19 @@
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <title>ITF Lab</title>
+    <script>
+        function myHide() {
+            document.getElementById('hidepage').style.display = 'block'; //content ที่ต้องการแสดงหลังจากเพจโหลดเสร็จ
+            document.getElementById('hidepage2').style.display = 'none'; //content ที่ต้องการแสดงระหว่างโหลดเพจ
+        }
+    </script>
 </head>
-<body>
+<body onload="myHide();">
+    <div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'toenweek13.mysql.database.azure.com', 'toenteen@toenweek13', 'Kassinowa751', 'itflab', 3306);
