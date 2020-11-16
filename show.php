@@ -18,6 +18,8 @@
     <span class="sr-only">Loading...</span>
   </div>
 </div>
+</body>
+<body>
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'toenweek13.mysql.database.azure.com', 'toenteen@toenweek13', 'Kassinowa751', 'itflab', 3306);
